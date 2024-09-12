@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard page | AsmrProg</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container__dash">
+        <!-- navbar section -->
+        <div class="navbar">
+            <div id="grey"  class="top">
+                <h1 class="navbar__title"><span class="navbar__span">Asmr</span>Prog</h1>
+            </div>
+            <ul id="navbar__list" class="navbar__list">
+                <li  class="navbar__item">
+                    <a class="navbar__link" href="#"><i class="fa-solid fa-border-all"></i></i><h3>Dashbord</h3></a>
+                </li>
+                <li  class="navbar__item">
+                    <a class="navbar__link" href="./dashboard.html"><i class="fa-regular fa-user"></i><h3 id="h3">Customers</h3></a>
+                </li>
+                <li  class="navbar__item">
+                    <a class="navbar__link" href="#"><i class="fa-solid fa-chart-line"></i><h3 id="h3">Analytics</h3></a>
+                </li>
+                <li  class="navbar__item">
+                    <a class="navbar__link" href="#"><i class="fa-solid fa-receipt"></i></i><h3 id="h3">Products</h3></a>
+                </li>
+                <li  class="navbar__item">
+                    <a class="navbar__link" href="#"><i class="fa-solid fa-bug"></i><h3 id="h3">Reports</h3></a>
+                </li>
+                <li  class="navbar__item">
+                    <a class="navbar__link" href="#"><i class="fa-solid fa-gear"></i><h3 id="h3">Settings</h3></a>
+                </li>
+                <li  class="navbar__item">
+                    <a class="navbar__link" href="#"><i class="fa-regular fa-plus"></i><h3 id="h3">Add Product</h3></a>
+                </li>
+                <li id="navbar__item_bottom"  class="navbar__item_bottom">
+                    <a class="navbar__link" href="#"><i class="fa-solid fa-right-from-bracket"></i><h3 id="h3">Logout</h3></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main section -->
+        <div class="main">
+            <h1 class="main__title">Dashboard</h1>
+            <div class="date">
+                <input class="date" type="date">
+            </div>
+            <div class="insights">
+                <!-- progres -->
+                <div class="sales">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h4 class="sales__title">Total Sales</h4>
+                    <div class="progres">
+                        <h1 class="price">$25,024</h1>
+                        <div class="circle">
+                            <div class="number">80%</div>
+                           </div>
+                    </div>
+                    <small>Last 24 Hours</small>
+                </div>
+                 <!-- sales -->
+                <div  class="sales">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <h4 class="sales__title">Total Sales</h4>
+                    <div class="progres">
+                        <h1 class="price">$25,024</h1>
+                        <div  class="circle">
+                            <div class="number">80%</div>
+                           </div>
+                    </div>
+                    <small>Last 24 Hours</small>
+                </div>
+                 <!-- analitic -->
+                <div class="sales">
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                    <h4 class="sales__title">Total Sales</h4>
+                    <div class="progres">
+                        <h1 class="price">$25,024</h1>
+                       <div class="circle">
+                        <div class="number">80%</div>
+                       </div>
+                    </div>
+                    <small>Last 24 Hours</small>
+                </div>
+            </div>
+            <!-- resent order -->
+             <div class="resent__order">
+                <h1 class="order__title">Resent Orders</h1>
+                <table >
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payments</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>Mini USB</td>
+                            <td>7463</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Mini USB</td>
+                            <td>4221</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Mini USB</td>
+                            <td>2345</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Mini USB</td>
+                            <td>456</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a class="main__link" href="#">Show All</a>
+             </div>
+        </div>
+
+       <!-- right -->
+        <div class="right">
+            <div class="top__right">
+                <button id="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="toggler">
+                    <i id="light" class="fa-regular fa-sun"></i>
+                    <i id="night" class="fa-regular fa-moon"></i>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p class="profile__text"><b>John Doe</b></p>
+                        <p class="profile__text">Business Analyst</p>
+                    </div>
+                    <div class="profile__photo">
+                       <a href="./profile.html"> <img class="profile__img" src="./img/profile-picture.jpg" alt="User__photo"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resent__update">
+                <h2 class="resent__title">Recent Update</h2>
+               <div  class="updates__wrap">
+                <div class="updates">
+                    <div class="profile__photo">
+                        <img class="profile__img"  src="./img/user.png" alt="User__photo">
+                    </div>
+                    <div class="message">
+                        <p><b>Babar</b>Recived his order of USB</p>
+                    </div>
+                </div>
+
+                <div class="updates">
+                    <div class="profile__photo">
+                        <img class="profile__img"  src="./img/user.png" alt="User__photo">
+                    </div>
+                    <div class="message">
+                        <p><b>Babar</b>Recived his order of USB</p>
+                    </div>
+                </div>
+
+                <div class="updates">
+                    <div class="profile__photo">
+                        <img class="profile__img"  src="./img/user.png" alt="User__photo">
+                    </div>
+                    <div class="message">
+                        <p><b>Babar</b>Recived his order of USB</p>
+                    </div>
+                </div>
+               </div>
+
+            </div>
+
+            <div class="sales__analiytic">
+                <h2 class="sales__subtitle">Sales Analytics</h2>
+                <div class="sales__wrap">
+                   <div  class="saless">
+                    <div class="shop__box1">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                   <div class="wrapper">
+                    <p class="sales__text"><b>onlion orders</b></p>
+                    <p class="sales__text">Last seen 2 Hours</p>
+                    <p class="sales__subtext1">-17%</p>
+                    <p class="sales__text"><b>3849</b></p>
+                   </div>
+                   </div>
+
+                   <div  class="saless">
+                    <div class="shop__box2">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                   <div class="wrapper">
+                    <p class="sales__text"><b>onlion orders</b></p>
+                    <p class="sales__text">Last seen 2 Hours</p>
+                    <p class="sales__subtext2">-17%</p>
+                    <p class="sales__text"><b>3849</b></p>
+                   </div>
+                   </div>
+
+                   <div  class="saless">
+                    <div class="shop__box3">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                   <div class="wrapper">
+                    <p class="sales__text"><b>onlion orders</b></p>
+                    <p class="sales__text">Last seen 2 Hours</p>
+                    <p class="sales__subtext3">-17%</p>
+                    <p class="sales__text"><b>3849</b></p>
+                   </div>
+                   </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+*{
+    text-decoration: none;
+    font-family: "roboto",sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color:rgb(226, 231, 235);
+}
+.container__dash{
+    width:1450px;
+    /* width:100%; */
+    padding:0 15px;
+    margin:0 auto;
+    display: flex;
+    align-items: start;
+}
+
+/* navbar style */
+
+.navbar__list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 30px;
+    padding-left: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px rgb(193, 191, 191);
+}
+.navbar{
+    padding-top: 20px;
+}
+.navbar__item,.navbar__item_bottom{
+    background-color: white;
+    padding-bottom: 35px;
+}
+.navbar__item_bottom{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.navbar__link{
+    display: flex;
+    color: grey;
+}
+.navbar__link:hover{
+    color: rgb(104, 104, 223);
+    margin-left: 7px;
+    transition: 0.3s;
+    .fa-border-all,.fa-user,.fa-chart-line,.fa-receipt,.fa-bug,.fa-gear,.fa-plus,.fa-right-from-bracket:hover{
+        color: black;
+    }
+}
+.navbar__link:active{
+    color: rgb(104, 104, 223);
+}
+h3{
+    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.navbar__title,.navbar__span{
+    font-size: 28px;
+    font-weight: 600;
+}
+.navbar__title{
+    color: red;
+    padding: 10px;
+}
+.navbar__span{
+    color: black;
+}
+.top{
+    background-color: white;
+    border-radius: 5px;
+    width: 250px;
+}
+.fa-border-all,.fa-user,.fa-chart-line,.fa-receipt,.fa-bug,.fa-gear,.fa-plus,.fa-right-from-bracket{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* main style */
+
+.main__title{
+    font-size: 45px;
+    font-weight: 800;
+    color: rgb(50, 50, 50);
+}
+.main{
+    padding-top: 20px;
+    padding-left: 30px;
+    width: auto;
+    padding-bottom: 30px;
+}
+.date{
+    border: none;
+    padding: 5px 15px;
+    outline: none;
+}
+.fa-chart-simple{
+    font-size: 18px;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: coral;
+}
+.fa-bag-shopping{
+    font-size: 18px;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    background-color:rgb(210, 149, 211);
+
+}
+.fa-money-bill-trend-up{
+    font-size: 18px;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    background-color:rgb(79, 160, 79);
+
+}
+.sales__title{
+    font-size: 16px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.progres{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.price{
+    font-size: 35px;
+    font-weight: 800;
+    color: rgb(29, 28, 28);
+}
+.circle{
+    background-color: white;
+    border:5px  solid purple;
+   padding: 15px 10px;
+   border-radius: 50%;
+
+}
+.sales{
+    background-color: white;
+    padding: 25px;
+    border-radius: 30px;
+    width: 230px;
+    box-shadow: 5px 5px 10px rgb(193, 191, 191);
+}
+.sales:hover{
+    box-shadow: none;
+}
+.insights{
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+}
+small{
+    font-weight: 600;
+    color: grey;
+}
+.order__title{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+    padding-top: 35px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+table{
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 25px 25px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgb(193, 191, 191);
+    transition: all.3s ease;
+    border-radius: 30px;
+    margin-bottom: 15px;
+
+}
+table:hover{
+    box-shadow: none;
+}
+.warning{
+    color: rgb(238, 152, 212);
+
+}
+.primary{
+    color: rgb(60, 60, 205);
+}
+table tbody tr{
+    height: 3.8rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(65, 64, 64);
+}
+table tbody tr td{
+    border-bottom: 1px solid rgb(79, 78, 78);
+}
+.main__link{
+    color: black;
+}
+.main__link:hover{
+    color: blue;
+}
+.resent__order{
+    text-align: center;
+}
+
+
+/* right style */
+
+.profile__img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.right{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#menu{
+    display: none;
+    border: none;
+}
+.top__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px; 
+
+}
+.toggler{
+    display: flex;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.fa-sun{
+    color: white;
+    background-color: rgb(112, 112, 174);
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+}
+.fa-moon{
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+}
+.profile__text{
+    font-size: 14px;
+}
+.resent__title,.sales__subtitle{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.updates{
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.message{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding-left: 5px;
+}
+.updates__wrap{
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px ;
+    /* width: 100%; */
+    box-shadow: 5px 5px 10px rgb(193, 191, 191);
+}
+.updates__wrap:hover{
+    box-shadow: none;
+}
+.saless{
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgb(193, 191, 191);
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* width: 100%; */
+    background-color: white;
+    padding: 20px;
+}
+.saless:hover{
+    box-shadow: none;
+}
+.shop__box1{
+    background-color: coral;
+    padding: 15px;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+}
+.shop__box2{
+    background-color:rgb(210, 149, 211);
+    padding: 15px;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+}
+.shop__box3{
+    background-color:rgb(79, 160, 79);
+    padding: 15px;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.sales__wrap{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.sales__text{
+    font-size: 16px;
+    font-weight: 500;
+    color: grey;
+    line-height: 26px;
+}
+.sales__text b{
+    color: black;
+}
+.sales__subtext1{
+    color: coral;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.sales__subtext2{
+    color: rgb(210, 149, 211);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.sales__subtext3{
+    color: rgb(79, 160, 79);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+
+
+/* responsive style *****************/
+
+@media screen and (max-width: 1080px){
+
+
+
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 480px){
+    
+}
+

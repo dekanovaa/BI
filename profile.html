@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+    <link rel="stylesheet" href="./css/profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-picture">
+                <img src="./img/profile-picture.jpg" alt="Profile Picture">
+            </div>
+            <div class="user-information">
+                <h2 class="name">John Doe</h2>
+                <p class="job-title">Business Analyst</p>
+                <p class="location">New York, USA</p>
+            </div>
+        </div>
+        <div class="performance-dashboard">
+            <div class="kpi-summary">
+                <div class="kpi-card">
+                    <h3 class="kpi-name">Revenue Growth</h3>
+                    <p class="kpi-value">25%</p>
+                    <i class="kpi-icon fa fa-chart-line"></i>
+                </div>
+                <div class="kpi-card">
+                    <h3 class="kpi-name">Customer Satisfaction</h3>
+                    <p class="kpi-value">90%</p>
+                    <i class="kpi-icon fa fa-smile"></i>
+                </div>
+                <div class="kpi-card">
+                    <h3 class="kpi-name">Sales Performance</h3>
+                    <p class="kpi-value">$10,000</p>
+                    <i class="kpi-icon fa fa-dollar-sign"></i>
+                </div>
+            </div>
+            <div class="analytics-charts">
+                <canvas id="chart"></canvas>
+            </div>
+        </div>
+        <div class="activity-feed">
+            <ul>
+                <li>
+                    <p class="activity-type">Task Completed</p>
+                    <p class="activity-description">Finished project report</p>
+                    <p class="activity-timestamp">2 hours ago</p>
+                </li>
+                <li>
+                    <p class="activity-type">New Connection</p>
+                    <p class="activity-description">Connected with Jane Smith</p>
+                    <p class="activity-timestamp">1 day ago</p>
+                </li>
+                <li>
+                    <p class="activity-type">Commented</p>
+                    <p class="activity-description">Commented on a post</p>
+                    <p class="activity-timestamp">3 days ago</p>
+                </li>
+            </ul>
+        </div>
+        <div class="customization-area">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="John Doe">
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" placeholder="Business Analyst">
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="New York, USA">
+                <input type="file" id="profile-picture" accept="image/*">
+            </form>
+            <button class="send-message">Send Message</button>
+            <button class="connect">Connect</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Chart.js configuration
+        const ctx = document.getElementById('chart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{
+                    label: 'Revenue',
+                    data: [100, 200, 300, 400, 500],
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
